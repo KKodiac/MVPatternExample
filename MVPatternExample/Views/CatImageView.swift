@@ -17,6 +17,7 @@ struct CatImageView: View {
                     image.resizable()
                 } placeholder: {
                     ProgressView()
+                        .frame(width: geometry.size.width, height: geometry.size.height)
                 }
                 .scaledToFit()
                 
@@ -45,6 +46,6 @@ struct CatImageView: View {
 struct CatImageView_Previews: PreviewProvider {
     static var previews: some View {
         CatImageView()
-            .environmentObject(Model(service: NetworkService(baseURL: URL(string: "https://cataas.com/")!)))
+            .environmentObject(Model())
     }
 }

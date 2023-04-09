@@ -54,6 +54,6 @@ struct AnimatedGifView: UIViewRepresentable {
 struct CatGIFView_Previews: PreviewProvider {
     static var previews: some View {
         CatGIFView()
-            .environmentObject(Model(service: NetworkService(baseURL: URL(string: "https://cataas.com/")!)))
+            .environmentObject(Model())
     }
 }

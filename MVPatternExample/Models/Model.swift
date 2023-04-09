@@ -11,19 +11,22 @@ import Foundation
 class Model: ObservableObject {
     @Published var image: URL?
     
-    let service: NetworkService
-    
-    init(service: NetworkService) {
-        self.service = service
-    }
+    let service = NetworkService()
     
     func getRandomCatImage() async throws {
-        let imageURL = try await service.getRandomCatImage()
+        let imageURL = try await service.getRandomImage(type: .cat)
         self.image = imageURL
     }
     
     func getRandomCatGIF() async throws {
-        let imageURL = try await service.getRandomCatGIF()
+        let imageURL = try await service.getRandomGIF(type: .cat)
+        self.image = imageURL
+    }
+    
+    func getRandomDogImage() async throws {
+        let imageURL = try await service.getRandomImage(type: .dog)
         self.image = imageURL
     }
 }
+
+

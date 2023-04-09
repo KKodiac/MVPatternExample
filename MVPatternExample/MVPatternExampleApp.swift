@@ -9,11 +9,10 @@ import SwiftUI
 
 @main
 struct MVPatternExampleApp: App {
-    let url = URL(string: "https://cataas.com/")!
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(Model(service: NetworkService(baseURL: url)))
+                .environmentObject(Model())
         }
     }
 }

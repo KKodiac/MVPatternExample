@@ -61,6 +61,7 @@
 		0BA8DE6C29E1BE6B0015D438 /* MVPatternExample */ = {
 			isa = PBXGroup;
 			children = (
+				0BA8DF0F29E2EE800015D438 /* Network */,
 				0BA8DE8929E1D6550015D438 /* Models */,
 				0BA8DE8829E1D6480015D438 /* Views */,
 				0BA8DE6D29E1BE6B0015D438 /* MVPatternExampleApp.swift */,
@@ -91,10 +92,17 @@
 		0BA8DE8929E1D6550015D438 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0BA8DE7B29E1BF3C0015D438 /* NetworkService.swift */,
 				0BA8DE7D29E1BFCD0015D438 /* Model.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0BA8DF0F29E2EE800015D438 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0BA8DE7B29E1BF3C0015D438 /* NetworkService.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
